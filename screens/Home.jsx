@@ -1,8 +1,11 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {Text, Touchable, TouchableOpacity, View} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import styles from './home.style';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import Fontisto from 'react-native-vector-icons/Fontisto';
+import {ScrollView} from 'react-native-gesture-handler';
+import {Welcome} from '../components';
 const Home = () => {
   return (
     <SafeAreaView>
@@ -14,9 +17,15 @@ const Home = () => {
             <View style={styles.cutCount}>
               <Text style={styles.cutNumber}> 8 </Text>
             </View>
+            <TouchableOpacity>
+              <Fontisto name="shopping-bag" size={24} />
+            </TouchableOpacity>
           </View>
         </View>
       </View>
+      <ScrollView>
+        <Welcome />
+      </ScrollView>
     </SafeAreaView>
   );
 };
