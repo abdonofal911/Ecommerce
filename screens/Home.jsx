@@ -6,6 +6,8 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import Fontisto from 'react-native-vector-icons/Fontisto';
 import {ScrollView} from 'react-native-gesture-handler';
 import {Welcome} from '../components';
+import Carousel from '../components/home/Carousel';
+import Headings from '../components/home/Headings';
 const Home = () => {
   return (
     <SafeAreaView>
@@ -25,6 +27,8 @@ const Home = () => {
       </View>
       <ScrollView>
         <Welcome />
+        <Carousel />
+        <Headings />
       </ScrollView>
     </SafeAreaView>
   );
