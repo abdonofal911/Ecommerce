@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
   },
   welcometxt: (color, top) => ({
     fontFamily: 'Poppins-Bold',
-    fontSize: SIZES.xxLarge - 5,
+    fontSize: SIZES.xLarge ,
     marginTop: top,
     color: color,
     marginHorizontal: 12,
