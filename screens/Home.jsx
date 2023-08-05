@@ -37,8 +37,6 @@ const Home = () => {
         <Carousel />
         <Headings />
         <ProductRow />
-        <Welcome />
-        <Carousel />
         <Headings />
         <ProductRow />
       </ScrollView>
