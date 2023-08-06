@@ -67,6 +67,7 @@ const styles = StyleSheet.create({
   ratingText: {
     color: COLORS.gray,
     fontFamily: 'Poppins-Medium',
+    paddingHorizontal: SIZES.xSmall,
   },
   descriptionwrapper: {
     marginTop: SIZES.large * 2,
@@ -81,6 +82,15 @@ const styles = StyleSheet.create({
     fontSize: SIZES.small,
     textAlign: 'justify',
     marginBottom: SIZES.small,
+  },
+  location: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    backgroundColor: COLORS.secondary,
+    alignItems: 'center',
+    marginHorizontal: 12,
+    padding: 5,
+    borderRadius: SIZES.large,
   },
 });
 

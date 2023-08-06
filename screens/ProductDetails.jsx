@@ -3,6 +3,7 @@ import {COLORS, SIZES} from '../assets/constants';
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import {View, TouchableOpacity, Image, Text} from 'react-native';
 import styles from './ProductDetails.style';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 const ProductDetails = ({navigation}) => {
   const [count, setCount] = useState(1);
@@ -68,6 +69,18 @@ const ProductDetails = ({navigation}) => {
             Lorem ipsum is placeholder text commonly used in the graphic, print,
             and publishing industries for previewing layouts and visual mockups.{' '}
           </Text>
+        </View>
+        <View style={{marginBottom: SIZES.small}}>
+          <View style={styles.location}>
+            <View style={{flexDirection: 'row'}}>
+              <Ionicons name="location-outline" size={20} />
+              <Text> Egypt - Cairo </Text>
+            </View>
+            <View style={{flexDirection: 'row'}}>
+              <MaterialCommunityIcons name="truck-fast-outline" size={20} />
+              <Text> Fast Delivery </Text>
+            </View>
+          </View>
         </View>
       </View>
     </View>
