@@ -5,6 +5,7 @@ import {View, TouchableOpacity, Image, Text} from 'react-native';
 import styles from './ProductDetails.style';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import Fontisto from 'react-native-vector-icons/Fontisto';
 const ProductDetails = ({navigation}) => {
   const [count, setCount] = useState(1);
 
@@ -81,6 +82,15 @@ const ProductDetails = ({navigation}) => {
               <Text> Fast Delivery </Text>
             </View>
           </View>
+        </View>
+
+        <View style={styles.cutRow}>
+          <TouchableOpacity style={styles.cutBtn} onPress={() => {}}>
+            <Text style={styles.cutTitle}>Buy Now !</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.addCart} onPress={() => {}}>
+            <Fontisto name='shopping-bag' size={24} color = {COLORS.lightWhite} />
+          </TouchableOpacity>
         </View>
       </View>
     </View>

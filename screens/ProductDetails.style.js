@@ -39,6 +39,12 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins-SemiBold',
     fontSize: SIZES.large,
   },
+  cutTitle: {
+    marginLeft: SIZES.small,
+    fontFamily: 'Poppins-SemiBold',
+    fontSize: SIZES.medium,
+    color: COLORS.lightWhite,
+  },
   priceWrapper: {
     backgroundColor: COLORS.secondary,
     borderRadius: SIZES.large,
@@ -91,6 +97,29 @@ const styles = StyleSheet.create({
     marginHorizontal: 12,
     padding: 5,
     borderRadius: SIZES.large,
+  },
+  cutRow: {
+    paddingBottom: SIZES.small,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: SIZES.width ,
+  },
+  cutBtn: {
+    width: SIZES.width * 0.7,
+    backgroundColor: COLORS.black,
+    padding: SIZES.small / 2,
+    borderRadius: SIZES.large,
+    marginLeft: 12,
+  },
+  addCart: {
+    width: 35,
+    height: 35,
+    borderRadius: 15,
+    margin: SIZES.small,
+    backgroundColor: COLORS.black,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
 
